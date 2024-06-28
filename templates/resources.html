@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/resources.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="maincont">
+            <h1 class="change">We change a lot, so keep up with us</h1>
+            <h4 class="latest">Our latest updates, changelog and blog for you futurists</h4>
+            <div class="three">
+                <div class="features infor">
+                    <img class="upimg" src="/static/images/Mask group (2).png" alt="">
+                    <div class="down">
+                        <h1 class="new">New feature: Sync your designs via iCloud</h1>
+                        <h4 class="file">File sharing has never been faster before! Here come's the cloud, duru rurum</h4>
+                        <h3 class="june">June 28 <span class="minutes">5 minutes read</span> </h3>
+                        <form class="bruh" action="/features">
+                            <button class="changelog">Read changelog</button> 
+                        </form>
+
+                    </div>
+                </div>
+                <div class="why infor">
+                    <img class="upimg" src="/static/Mask group.png" alt="">
+                    <div class="down">
+                        <h1 class="new">Why Apple product for the best use</h1>
+                        <h4 class="file">Studies show that the most popular hardware company as well as software developer for the professionals in th...</h4>
+                        <h3 class="june">May 12 <span class="minutes">5 minutes read</span> </h3>
+                        <button class="changelog">Read blog</button>
+                    </div>
+                </div>
+                <div class="ai infor">
+                    <img class="upimg" src="/static//images/Mask group (1).png" alt="">
+                    <div class="down">
+                        <h1 class="new">AI's place in modern design tools - case study</h1>
+                        <h4 class="file long">We've conducted numerous case studies before we decided to implement the AI update for Apple products...</h4>
+                        <h3 class="june">july 2 <span class="minutes">5 minutes read</span> </h3>
+                        <button class="changelog">Read blog</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+</body>
+</html>
+
+{% endblock %}

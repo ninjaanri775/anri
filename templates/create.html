@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block css%}
+<link rel="stylesheet" href="/static/create.css">
+{% endblock%}
+
+{% block body %}
+
+<section>
+
+    <h1>Add New Product</h1>
+<form class="nothing" method="post" enctype="multipart/form-data">
+
+    {{ form.hidden_tag() }}
+
+    {{ form.img.label.text }}: {{ form.img(accept=".jpg,.png") }}
+    {{ form.price(class="prodname", placeholder="Enter product price") }}
+    {{ form.name(class="prodname", placeholder="Enter product name") }}
+    {{ form.submit(class="submit") }}
+    
+
+</form>    
+</section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    {% block css%}
+    {% endblock%}
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="info">
+            <a href="/features">Features</a>
+            <a href="/resources">Resources</a>
+            <a href="/subscriptions">Pricing</a>
+            <a href="/shop">Shop</a>
+        </div>
+        <form action="/">
+            <button class="imgbutton"><img src="/static/ Pay (1).svg" alt="Apple Pay"></button>
+        </form>
+    
+        <div class="log">
+            {% if current_user.is_authenticated %}
+                <div class="useromg">
+                    <h4>Hello, </h4>{{ current_user.username }}
+                </div>
+
+                <form action="/logout">
+                    <button class="login logout">Logout</button>
+                </form>
+            {% else %}
+            <form action="/login">
+                <button class="login"> Log in</button>
+            </form>
+    
+            {% endif %}
+        </div>
+    </div>
+
+        {{ username }}
+
+    </div>
+
+    {% block body %}
+
+    {% endblock %}
+
+    <div class="invs">
+        <div class="everything">
+            <h1 class="invsembrace">Embrace The Future Now</h1>  
+            
+            <div class="things">
+
+                <div class="one">
+                    <img class="appletwo" src="/static/ Pay (1).svg" alt="">
+
+                    <h4 class="thingabout"> © Apple. All right reserved.</h4>
+                </div>
+
+                <div class="two">
+                    <h4 class="mainthing">What we got</h4>
+                    <h4 class="thingabout">Pricing</h4>
+                    <h4 class="thingabout">Features</h4>
+                    <h4 class="thingabout">Resources</h4>
+                </div>
+
+                <div class="three">
+                    <h4 class="mainthing">Legal</h4>
+                    <h4 class="thingabout">Privacy</h4>
+                    <h4 class="thingabout">Terms</h4>
+                    <h4 class="thingabout">Help & Support</h4>
+                </div>
+
+                <div class="four">
+                    <h4 class="mainthing">Social</h4>
+                    <h4 class="thingabout">X</h4>
+                    <h4 class="thingabout">Instagram</h4>
+                    <h4 class="thingabout">Discord</h4>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    {% block js%}
+    {% endblock%}
+</body>
+
+</html>

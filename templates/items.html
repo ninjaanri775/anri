@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block css%}
+<link rel="stylesheet" href="/static/items.css">
+{% endblock%}
+
+{% block body%}
+
+
+<section>
+<div class="container">
+    <div class="imgdiv">
+       <img class="shopimg" src="/static/images/{{ shop['img'] }}" alt=""> 
+    </div>
+
+<p class="shopname iphone">Buy {{ shop['name'] }}</p>
+<button class="add">Add to bag +</button>
+<button class="buy">Buy now</button>
+</div>   
+</section>
+
+
+
+{% endblock %}
+
+{% block js%}
+<script src="/static/items.js"></script>
+{% endblock%}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+    
+
+    {% block body%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/subscription.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1 class="unlimited">Get Unlimited Access</h1>
+        <h4 class="find">Find the perfect plan, cancel anytime</h4>
+
+
+            <div class="container">
+
+        {% for product in products %}
+        <div class="sub1">
+            <h3 class="proname">{{ product['name'] }}</h3>  
+            <h5 class="procom">{{ product['com']}}</h5>  
+
+            <h1 class="price">{{ product['price'] }} </h1>
+            <h4 class="month">/Per Month</h4>
+            <form class="subform" action="/product/{{ product['id']}}">
+                <button class="subinfo">{{ product['button']}}</button>
+            </form>
+            <div class="sub2info">
+            <h4 class="sub2desc">✔{{ product['description1'] }}</h4>
+            <h4 class="sub2desc">✔{{ product['description2'] }}</h4>
+            <h4 class="sub2desc">✔{{ product['description3'] }}</h4>
+            <h4 class="sub2desc">✔{{ product['description4'] }}</h4>
+            <h4 class="sub2desc">✔{{ product['description5'] }}</h4>   
+            </div>
+
+
+        </div>
+
+
+
+    {% endfor %}
+    
+    </div>
+
+    <div class="blue"></div>
+    <div class="rainbow"></div>
+
+
+
+</body>
+</html>
+
+{% endblock %}

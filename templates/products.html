@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/products.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container3">
+
+    <div class="subcontainer">
+        <div class="sub2">
+        <h1 class="proname top">{{ product['name'] }}</h1>  
+        <h5 class="procom top">{{ product['com']}}</h5>  
+        <h1 class="sub2price">{{ product['price']}}<span class="sub2month">/Month, billed yearly</span> </h1>
+        <form class="see" action="/subscriptions">  
+            <button class="month">See plan details</button>
+        </form>
+
+    </div>
+  
+    <div class="subinput">
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="email" placeholder="Email">
+        <input class="address" type="text" placeholder="Address">
+        <input class="num" type="text" placeholder="Phone number">
+
+        <h2 class="pay"> + Add Payment</h2>
+    </div>
+
+
+
+        </div>
+
+
+
+
+<br>
+
+    <form class="sub2form" action="/">
+        <button class="backbutton">Update</button>
+</form>
+
+
+    </div>
+
+
+
+
+    <script src="/static/products.js"></script>
+
+</body>
+</html>
+
+
+
+{% endblock %}
+

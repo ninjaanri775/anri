@@ -1,0 +1,216 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #101013 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.shopcontainer{
+    grid-template-columns: auto auto auto ;
+    background: #101013 ;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 350px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 40px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 200px;
+}
+
+.work{
+   text-align: center;
+   color: white;
+   font-size: 4em;
+   font-weight: 400;
+   position: relative;
+   top: 120px;
+}
+
+.designer{
+    color: rgba(255, 255, 255, 0.495);
+    font-weight: 200;
+    position: relative;
+    top: 120px;
+}
+
+.productdiv{
+    width: 32%;
+    height: 550px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background: #101013 ;
+    color: white;
+    border: 0.1svh solid rgb(94, 94, 94);
+}
+
+.imgshopdiv{
+    background-color: white;
+    width: 77%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 240px;
+    position: relative;
+    bottom: 30px;
+}
+
+.bigimg{
+    width: 60%;
+}
+
+.change{
+    background-color: #ffffff0f;
+    position: relative;
+    top: 30px;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        background-color: #ffffff0f;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: #ffffff0f;
+        color: white;
+    }
+}
+
+
+.change:hover {
+    animation: hoverAnimation 0.2s forwards;
+}
+
+
+
+
+.iphone{
+    font-size: 20px;
+    font-size: 2em;
+    padding-right: 29%;
+}
+
+.view{
+    background-color: #ffffff0f;
+    width: 77%;
+    height: 38px;
+    position: relative;
+    top: 20px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+
+
+@keyframes hoverAnimation {
+    0% {
+        background-color: #ffffff0f;
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: #ffffff0f;
+    }
+}
+
+
+.view:hover {
+    animation: hoverAnimation 0.2s forwards;
+}
+
+.view::after {
+    content: "+";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+}
+
+.view:hover::after {
+    content: ">";
+    opacity: 1;
+}
+
+.price{
+    font-size: 27px;
+    padding-right: 58% ;
+}
+
+.shopname{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.iphone{
+    width: 73%;
+    padding-left: 30px;
+}
+
+.delete{
+    background-color: #ffffff0f;
+    position: relative;
+    top: 40px;
+    width: 120%;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    border: none;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.delete:hover {
+    animation: hoverAnimation 0.2s forwards;
+}
+
+
+.shopdesdiv{
+    text-align: center;
+    background-color: #3b3b3b;
+    color: white;
+    margin-top: 150px;
+    width: 100%;
+    height: 130px;
+}
+
+
+.addin{
+    position: relative;
+    top: 150px;
+    width: 20%;
+}

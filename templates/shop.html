@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/shop.css">
+{% endblock %}
+
+{% block body %}
+
+<h1 class="work">Work With The Best</h1>
+<h4 class="designer">Our AI Designer works best with our products</h4>
+{% if current_user.is_authenticated and current_user.role.lower() == "admin" %}
+    <a class="change addin" href="/create">Add new product</a>
+{% endif %}
+
+
+<div class="shopcontainer">
+    {% for shop in shops %}
+    <div class="productdiv">
+        <div class="imgshopdiv">
+            <img class="bigimg" src="/static/images/{{ shop['img'] }}" alt="">
+        </div>
+
+            <p class="shopname iphone"> Buy {{ shop['name'] }}</p>
+            <p class="shopname price">For {{ shop['price'] }}$</p>
+            <a class="view" href="/shop/{{ shop.id }}"></a>
+        {% if current_user.is_authenticated and current_user.role.lower() == "admin" %}
+            <a class="change" href="/update">Change price</a>
+            <form action="/shop/delete/{{ shop.id }}" method="POST" >
+                <button class="delete" type="submit">Delete</button>
+            </form>
+        {% endif %}
+
+
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

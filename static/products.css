@@ -1,0 +1,165 @@
+/* sub2price
+sub2name
+sub2desc
+sub2
+sub2month */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub2month{
+    font-size: 15px; 
+    color: rgba(209, 208, 208, 0.585);
+}
+
+.sub2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 292px;
+    width: 30%;
+    background-color: #1D1C20;
+    color: white;
+    border-radius: 40px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.sub2desc{
+    padding-top: 30px;
+    font-size: 17px;
+}
+
+.backbutton{
+
+    width: 80%;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    background-color: #302F33;
+    position: relative;
+    left: 19%;
+    transition: 0.3s;
+}
+
+.sub2form{
+    position: relative;
+    left: -8.4%;
+}
+
+.backbutton:hover{
+    background-color: #39373c;
+}
+
+.container3{
+    position: relative;
+    top: 160px;
+    margin-bottom: 100px;
+    width: 47%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 0.1svh solid rgb(94, 94, 94);
+    border-radius: 40px;
+}
+
+.subcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.subinput{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+    margin-left: 60px;
+    margin-top: 23px;
+}
+
+.pay{
+    color: white;
+    position: relative;
+    left: 45.6%;
+}
+
+input{
+    border: 0.3svh solid rgba(63, 63, 63, 0.474);
+    background-color: transparent;
+    border-radius: 12px;   
+    height: 40px;
+    width: 100%;
+    padding-left: 16px;
+    color: white;
+}
+
+.proname{
+    font-weight: 400;
+}
+
+.procom{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.386);
+}
+
+.top{
+    position: relative;
+    right: 25%;
+    bottom: 58px;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub2price{
+    position: relative;
+    bottom: 45px;
+    right: 10%;
+    font-weight: 300;
+}
+
+.sub2::before {
+    content: "";
+    width: 30%;
+    height: 292px;
+    background: linear-gradient(90deg, rgba(244, 244, 244, 0.6) 0%, rgba(244, 244, 244, 0.603) 100%);
+    position: absolute;
+    z-index: 2;
+    left: 12%;
+    filter: blur(50px);
+    pointer-events: none;
+    opacity: 30%;
+    transform: translateX(-20%);
+}
+
+
+.month{
+    width: 60%;
+    border: none;
+    border-radius: 12px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.211);
+    color: white;
+    transition: 0.3s;
+}
+
+.month:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.see{
+    width: 80%;
+    position: relative;
+    left: 18%;
+}

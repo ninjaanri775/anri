@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="colors one"></div>
+      
+         
+            <div class="container">
+         <form method="post" >
+            {{ form.hidden_tag() }}
+
+            <div class="inputslog">
+                <h1>Welcome back</h1>
+
+              {{ form.username( placeholder= "Enter your username" ) }}
+            
+              {{ form.password( placeholder= "Enter your password" ) }}
+
+ 
+            
+           
+            {{ form.submit( class="submit", placeholder= "Log in",  ) }}
+
+             <button class="imgbutton"> <img class="apple" src="/static/ Pay (1).svg" alt="Apple Pay">   Continue with apple</button>
+            </form>
+
+
+           
+
+            <h4>Got no account? <a href="/register">Sign up</a></h4>
+            </div>
+
+
+        
+    </div>
+    
+
+    <div class="twos">
+    <div class="colors one"></div>
+    <div class="colors two"></div>
+    </div>
+
+    </section>
+
+
+</body>
+</html>

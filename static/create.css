@@ -1,0 +1,56 @@
+
+
+section{
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    font-size: 32px;
+    color: white;
+    position: relative;
+    top: 200px;
+}
+
+.nothing{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    top: 230px;
+    width: 30%;
+    margin-bottom: 200px;
+    color: white;
+    left: 8%;
+}
+
+.prodname{
+    color: white;
+    background: #1D1C20;
+    height: 28px;
+    width: 50%;
+    border: none;
+    border-radius: 12px;
+    padding-left: 12px;
+    
+}
+
+
+.submit{
+    width: 50%;
+    height: 28px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    background: #1D1C20;
+}
+
+
+.submit:hover{
+    background-color: rgba(251, 251, 251, 0.221);
+}
